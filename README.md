@@ -2,8 +2,8 @@
 
 [![Forge networking](https://camo.githubusercontent.com/ab83ef623f08112ed6b45faecb615120efc9014e/687474703a2f2f692e696d6775722e636f6d2f657a4c6a756a6e2e706e67)](https://github.com/BeardedManStudios/ForgeNetworkingRemastered)
 
-Arena Game is a Unity game made with Forge networking meant as an example project for Forge.
-*Please notice that it is user made and the developers of Forge Networking Remastered have not created this neither offers support for it.*
+Arena Game is a Unity game made with Forge networking meant as an example project for Forge. \
+***Please notice that it is user made and the developers of Forge Networking Remastered have not created this neither offers support for it.***
 
 # Features!
 
