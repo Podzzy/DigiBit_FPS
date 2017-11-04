@@ -27,7 +27,7 @@ The project includes some nice things, however, an example project would be too 
  - No options menu! The game is using some post processing that you can't turn off ingame. If you computer is struggeling to run this, disable it on the player's camera.
 
 Arena Game was a project designed to show off how certain things are done in Forge Remastered, showcased as a fully featured game since I figured that's the best way to example stuff. \
-It's created by me, NF Mynster, come for a chat on the Forge Discord server [here](https://github.com/BeardedManStudios/ForgeNetworkingRemastered) if you are interested in Forge or want to have a general chat with some nice people!
+It's created by me, NF Mynster, come for a chat on the Forge Discord server [here](https://discord.gg/yzZwEYm) if you are interested in Forge or want to have a general chat with some nice people!
 
 
 # Documentation & support!
