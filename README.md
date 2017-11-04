@@ -22,10 +22,11 @@ The project includes some nice things, however, an example project would be too 
  - Master server registration. This is very easy to setup with Forge though.
  - NAT Punchthrough server. Forge offers a natpunch which I'm not using for this project.
  - Server browser. This project is direct connect only, however Forge comes with examples of both a lobby system and a server browser.
- - An ingame pause menu! To disconnect yourself from the game, you'll nee
+ - An actual gamemode, however everything you need for creating your own is there (A gamemode class)
 
 
-Arena Game was a project designed to show off how certain things are done in Forge Remastered, showcased as a fully featured game since I figured that's the best way to example stuff. It's created by me, NFMynster, come for a chat on the Forge Discord server [here](https://github.com/BeardedManStudios/ForgeNetworkingRemastered) if you are interested in Forge or want to have a general chat with some nice people!
+Arena Game was a project designed to show off how certain things are done in Forge Remastered, showcased as a fully featured game since I figured that's the best way to example stuff. \
+It's created by me, NF Mynster, come for a chat on the Forge Discord server [here](https://github.com/BeardedManStudios/ForgeNetworkingRemastered) if you are interested in Forge or want to have a general chat with some nice people!
 
 
 # Documentation & support!
