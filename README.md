@@ -15,6 +15,7 @@ Arena Game is a Unity game made with Forge networking meant as an example projec
   - Animated & networked characters!
   - Player health, respawn, spawnpoints
   - HUD & UI
+  - Ragdolls!!
   - A few more things
   - MIT license! *(However, don't be afraid to credit/thank me, I would appriciate it!)*
   - [**A few articles on the GitHub wiki**](https://github.com/NFMynster/ArenaGame/wiki)
