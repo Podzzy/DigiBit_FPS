@@ -18,6 +18,11 @@ Arena Game is a Unity game made with Forge networking meant as an example projec
   - A few more things
   - MIT license! *(However, don't be afraid to credit/thank me, I would appriciate it!)*
 
+The project includes some nice things, however, an example project would be too big and complex if I had to feature every thing Forge has to offer, so here is a list of things this project does **not** feature.
+ - Master server registration. This is very easy to setup with Forge though.
+ - NAT Punchthrough server. Forge offers a natpunch which I'm not using for this project.
+ - Server browser. This project is direct connect only, however Forge comes with examples of both a lobby system and a server browser.
+ - An ingame pause menu! To disconnect yourself from the game, you'll nee
 
 
 Arena Game was a project designed to show off how certain things are done in Forge Remastered, showcased as a fully featured game since I figured that's the best way to example stuff. It's created by me, NFMynster, come for a chat on the Forge Discord server [here](https://github.com/BeardedManStudios/ForgeNetworkingRemastered) if you are interested in Forge or want to have a general chat with some nice people!
@@ -34,7 +39,7 @@ And because of that, I wrote a few articles in the Github Wiki for this project,
 # Credit
 
 For making this a better example, I've used a few assets, as I'm no artist myself!
-
+* My animator, Shelby! He created some nice **in engine** animations! [Check out his twitter](https://twitter.com/shelbyjuno)
 * [Kenney.nl](http://kenney.nl/) - For (almost) all 3d assets used in the game! 
     * more specifically the [weapons pack](http://kenney.nl/assets/weapon-pack), [the nature pack](http://kenney.nl/assets/nature-pack-extended), [the castle kit](http://kenney.nl/assets/castle-kit) and of course [the characters](http://kenney.nl/assets/3d-characters).
 * [SimpleSky](https://www.assetstore.unity3d.com/en/#!/content/42373) - An awesome cartoony skydome!
