@@ -17,6 +17,7 @@ Arena Game is a Unity game made with Forge networking meant as an example projec
   - HUD & UI
   - A few more things
   - MIT license! *(However, don't be afraid to credit/thank me, I would appriciate it!)*
+  - [**A few articles on the GitHub wiki**](https://github.com/NFMynster/ArenaGame/wiki)
 ___
 The project includes some nice things, however, an example project would be too big and complex if I had to feature every thing Forge has to offer, so here is a list of things this project does **not** feature.
  - Master server registration. This is very easy to setup with Forge though.
@@ -50,7 +51,7 @@ For making this a better example, I've used a few assets, as I'm no artist mysel
 * [SimpleSky](https://www.assetstore.unity3d.com/en/#!/content/42373) - An awesome cartoony skydome!
 * [SimpleFX](https://www.assetstore.unity3d.com/en/#!/content/67834) - Some very nice cartoony particle, where I modified some of them slightly.
 * [Unity's postprocessing stack v1](https://github.com/Unity-Technologies/PostProcessing) - Unity's great post processing stack
-* TextMesh Pro - superior text
+* TextMesh Pro - superior text in Unity
 * And of course the Forge Discord - Everything Forge related, question, answers and so on.
 
 # Usage
@@ -59,6 +60,7 @@ ArenaGame is made with Unity 2017.2.0f3 using Forge 24.2.
 It should work on other Unity installations try it out.
 Just open up the project in Unity, open the /Scenes/MainMenu and press play, and you are good to go.
 If you want to build it, make sure you make the main menu the first scene and the ArenaScene the second scene in the build menu. 
+
 **There is also a compiled build included for Windows, if you just wanna have a quick test run**
 
 License
