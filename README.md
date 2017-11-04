@@ -17,7 +17,7 @@ Arena Game is a Unity game made with Forge networking meant as an example projec
   - HUD & UI
   - A few more things
   - MIT license! *(However, don't be afraid to credit/thank me, I would appriciate it!)*
-
+___
 The project includes some nice things, however, an example project would be too big and complex if I had to feature every thing Forge has to offer, so here is a list of things this project does **not** feature.
  - Master server registration. This is very easy to setup with Forge though.
  - NAT Punchthrough server. Forge offers a natpunch which I'm not using for this project.
