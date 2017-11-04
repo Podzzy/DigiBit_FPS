@@ -31,7 +31,9 @@ Arena Game was a project designed to show off how certain things are done in For
 # Documentation & support!
 > but why did you do this like that and that like this 
 
-I'm still unsure whether or not I will be supporting this for eventual bugs, as it's more meant as a showcase product than a actual commercial/real title. That's also a reason why some of the systems are made the way they are, as they serve a better purpose of exampling stuff rather than being super optimal or ideal (such as cheatproofing)
+I'm still unsure whether or not I will be supporting this for eventual bugs, as it's more meant as a showcase product than a actual commercial/real title. \
+That's also a reason why some of the systems are made the way they are, as they serve a better purpose of exampling stuff rather than being super optimal or ideal (such as cheatproofing)\
+___
 Also, it should be noted that Forge doesn't have a uniform way of doings thing (*does programming really?*) so this is my network design and my way of doing things, and there certainly are things that get be improved. 
 And because of that, I wrote a few articles in the Github Wiki for this project, explaning my main structure and why/how I did what I did.
 
@@ -45,6 +47,7 @@ For making this a better example, I've used a few assets, as I'm no artist mysel
 * [SimpleSky](https://www.assetstore.unity3d.com/en/#!/content/42373) - An awesome cartoony skydome!
 * [SimpleFX](https://www.assetstore.unity3d.com/en/#!/content/67834) - Some very nice cartoony particle, where I modified some of them slightly.
 * [Unity's postprocessing stack v1](https://github.com/Unity-Technologies/PostProcessing) - Unity's great post processing stack
+* TextMesh Pro - superior text
 * And of course the Forge Discord - Everything Forge related, question, answers and so on.
 
 # Usage
