@@ -33,10 +33,11 @@ It's created by me, NF Mynster, come for a chat on the Forge Discord server [her
 > but why did you do this like that and that like this 
 
 I'm still unsure whether or not I will be supporting this for eventual bugs, as it's more meant as a showcase product than a actual commercial/real title. \
-That's also a reason why some of the systems are made the way they are, as they serve a better purpose of exampling stuff rather than being super optimal or ideal (such as cheatproofing)\
+That's also a reason why some of the systems are made the way they are, as they serve a better purpose of exampling stuff rather than being super optimal or ideal (such as cheatproofing) 
 ___
 Also, it should be noted that Forge doesn't have a uniform way of doings thing (*does programming really?*) so this is my network design and my way of doing things, and there certainly are things that get be improved. 
-And because of that, I wrote a few articles in the Github Wiki for this project, explaning my main structure and why/how I did what I did.
+And because of that, I wrote a few articles in the Github Wiki for this project, explaning my main structure and why/how I did what I did. \
+[Find them here!](https://github.com/NFMynster/ArenaGame/wiki)
 
 
 # Credit
