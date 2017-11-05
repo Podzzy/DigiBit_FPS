@@ -44,6 +44,9 @@ Also, it should be noted that Forge doesn't have a uniform way of doings thing (
 And because of that, I wrote a few articles in the Github Wiki for this project, explaning my main structure and why/how I did what I did. \
 [Find them here!](https://github.com/NFMynster/ArenaGame/wiki)
 
+#### Bugs
+There are few minor bugs in the project, if you find some crucial ones, [report them here](https://github.com/NFMynster/ArenaGame/issues)
+
 
 # Credit
 
