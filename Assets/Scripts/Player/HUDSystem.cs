@@ -48,8 +48,17 @@ public class HUDSystem : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI killedByText;
 
+    //The Pause UI screen
     [SerializeField]
     private GameObject pauseUIScreen;
+
+    //The slider for the mouse sensitivity
+    [SerializeField]
+    private Slider mouseSensitivitySlider;
+
+    //The slider for the mouse smoothness
+    [SerializeField]
+    private Slider mouseSmoothnessSlider;
 
     // Use this for initialization
     void Start()
@@ -246,21 +255,40 @@ public class HUDSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Called from the Update method on a keypress
+    /// </summary>
     void ShowPauseScreen()
     {        
+        //Show the screen
         pauseUIScreen.SetActive(true);
-        GetComponentInChildren<SimpleSmoothMouseLook>().enabled = false;
+        var mouseLook =  GetComponentInChildren<SimpleSmoothMouseLook>();
+        //disable the mouse look
+        mouseLook.enabled = false;
+        //set the slider values to the mouseLook values.
+        mouseSensitivitySlider.value = mouseLook.sensitivity.x;
+        mouseSmoothnessSlider.value = mouseLook.smoothing.x;
         Cursor.visible = true;
     }
 
+    /// <summary>
+    /// called from the resume button on the Pause UI
+    /// </summary>
     public void PauseUIResume()
-    {
-        Debug.Log("RESUME");
-        GetComponentInChildren<SimpleSmoothMouseLook>().enabled = true;
+    {        
+        var mouseLook = GetComponentInChildren<SimpleSmoothMouseLook>();
+        //enable the mouse look
+        mouseLook.enabled = true;
+        //On resume, set the mouselook's values to the slider's value
+        mouseLook.sensitivity = new Vector2(mouseSensitivitySlider.value, mouseSensitivitySlider.value);
+        mouseLook.smoothing = new Vector2(mouseSmoothnessSlider.value, mouseSmoothnessSlider.value);
         pauseUIScreen.SetActive(false);
         Cursor.visible = false;
     }
 
+    /// <summary>
+    /// called from the disconnect button on the Pause UI
+    /// </summary>
     public void PauseUIDisconnect()
     {
         Debug.Log("Disconnect");
