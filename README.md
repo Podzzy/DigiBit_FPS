@@ -54,6 +54,7 @@ For making this a better example, I've used a few assets, as I'm no artist mysel
 * [Unity's postprocessing stack v1](https://github.com/Unity-Technologies/PostProcessing) - Unity's great post processing stack
 * TextMesh Pro - superior text in Unity
 * And of course the Forge Discord - Everything Forge related, question, answers and so on.
+* (And a google font, Julius Sans, under [this license](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web) )
 
 # Usage
 
