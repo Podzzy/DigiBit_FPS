@@ -385,7 +385,7 @@ public class WeaponController : MonoBehaviour
         //set the current weapon index
         currentWeaponIndex = weaponToSwitch;
         //Hide old viewmodel & world model
-        if (currentWeapon != weaponList[0])
+        if (currentWeapon.weaponName != "Hands")
         {
             currentWeapon.viewModel.SetActive(false);
             currentWeapon.worldModel.SetActive(false);
@@ -395,7 +395,7 @@ public class WeaponController : MonoBehaviour
         currentWeapon = weaponList[weaponToSwitch].Clone();
         Debug.Log("SWITCH WEAPON");
         //if the weapon switched to, is not the hands, show the view and world models and set the animator values accordingly
-        if (currentWeapon != weaponList[0])
+        if (currentWeapon.weaponName != "Hands")
         {
             currentWeapon.viewModel.SetActive(true);
             currentWeapon.worldModel.SetActive(true);

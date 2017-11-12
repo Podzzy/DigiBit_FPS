@@ -72,8 +72,9 @@ public class WeaponPickup : WeaponPickupBehavior
             NetworkedPlayer np = col.GetComponent<NetworkedPlayer>();
             if (np)
             {
-                //call the pickup RPC
-                networkObject.SendRpc(WeaponPickupBehavior.RPC_ON_PICKUP, Receivers.AllBuffered);
+                Debug.Log("Weapon Pickup");
+                //call the pickup RPC, and send along the respawn time as the clients are unaware of that variable
+                networkObject.SendRpc(WeaponPickupBehavior.RPC_ON_PICKUP, Receivers.AllBuffered, weaponRespawnTime);
                 //+1 to the weapon index, as the 0 index is the hands on the player.
                 np.networkObject.SendRpc(PlayerBehavior.RPC_SWITCH_WEAPON, BeardedManStudios.Forge.Networking.Receivers.AllBuffered, weaponIndex + 1);
             }
@@ -87,6 +88,7 @@ public class WeaponPickup : WeaponPickupBehavior
     /// <param name="args"></param>
     public override void OnPickup(RpcArgs args)
     {
+        float receivedRespawnTime = args.GetNext<float>();
         pickupCollider.enabled = false;
         weaponModel.SetActive(false);
         //Start respawning weapon
@@ -94,10 +96,10 @@ public class WeaponPickup : WeaponPickupBehavior
         {
             StopCoroutine(respawnWeaponCoroutine);
         }
-        respawnWeaponCoroutine = StartCoroutine(RespawnWeapon());
+        respawnWeaponCoroutine = StartCoroutine(RespawnWeapon(receivedRespawnTime));
     }
 
-    IEnumerator RespawnWeapon()
+    IEnumerator RespawnWeapon(float weaponRespawnTime)
     {
         yield return new WaitForSeconds(weaponRespawnTime);
         pickupCollider.enabled = true;

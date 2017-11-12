@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace BeardedManStudios.Forge.Networking.Generated
 {
-	[GeneratedRPC("{\"types\":[[][\"int\"]]")]
-	[GeneratedRPCVariableNames("{\"types\":[[][\"weaponIndex\"]]")]
+	[GeneratedRPC("{\"types\":[[\"float\"][\"int\"]]")]
+	[GeneratedRPCVariableNames("{\"types\":[[\"respawnTime\"][\"weaponIndex\"]]")]
 	public abstract partial class WeaponPickupBehavior : NetworkBehavior
 	{
 		public const byte RPC_ON_PICKUP = 0 + 5;
@@ -23,7 +23,7 @@ namespace BeardedManStudios.Forge.Networking.Generated
 			networkObject.AttachedBehavior = this;
 
 			base.SetupHelperRpcs(networkObject);
-			networkObject.RegisterRpc("OnPickup", OnPickup);
+			networkObject.RegisterRpc("OnPickup", OnPickup, typeof(float));
 			networkObject.RegisterRpc("Setup", Setup, typeof(int));
 
 			networkObject.onDestroy += DestroyGameObject;
@@ -101,10 +101,12 @@ namespace BeardedManStudios.Forge.Networking.Generated
 
 		/// <summary>
 		/// Arguments:
+		/// float respawnTime
 		/// </summary>
 		public abstract void OnPickup(RpcArgs args);
 		/// <summary>
 		/// Arguments:
+		/// int weaponIndex
 		/// </summary>
 		public abstract void Setup(RpcArgs args);
 
