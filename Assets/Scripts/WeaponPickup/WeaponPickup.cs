@@ -72,7 +72,6 @@ public class WeaponPickup : WeaponPickupBehavior
             NetworkedPlayer np = col.GetComponent<NetworkedPlayer>();
             if (np)
             {
-                Debug.Log("Weapon Pickup");
                 //call the pickup RPC, and send along the respawn time as the clients are unaware of that variable
                 networkObject.SendRpc(WeaponPickupBehavior.RPC_ON_PICKUP, Receivers.AllBuffered, weaponRespawnTime);
                 //+1 to the weapon index, as the 0 index is the hands on the player.
