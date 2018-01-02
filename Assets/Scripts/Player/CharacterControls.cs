@@ -77,7 +77,7 @@ public class CharacterControls : MonoBehaviour
         if (grounded)
         {
             // Calculate how fast we should be moving
-            targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")).normalized;
             //use the playerbody's transform if it's defined
             if (playerBody)
             {
