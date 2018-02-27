@@ -36,9 +36,6 @@ public class MultiplayerMenu : MonoBehaviour
 
 	private void Start()
 	{
-		ipAddress.text = "127.0.0.1";
-		portNumber.text = "15937";
-
 		for (int i = 0; i < ToggledButtons.Length; ++i)
 		{
 			Button btn = ToggledButtons[i].GetComponent<Button>();
@@ -74,6 +71,14 @@ public class MultiplayerMenu : MonoBehaviour
 			ConnectToMatchmaking();
 			return;
 		}
+		if (string.IsNullOrEmpty(ipAddress.text))
+        	{
+            		ipAddress.text = "127.0.0.1";
+      		}
+       		if (string.IsNullOrEmpty(portNumber.text))
+       		{
+            		portNumber.text = "15937";
+       		}
 		ushort port;
 		if(!ushort.TryParse(portNumber.text, out port))
 		{
