@@ -675,22 +675,22 @@
         <para>Enum provding terrain rendering options.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.TerrainRenderFlags.all">
+    <member name="F:UnityEngine.TerrainRenderFlags.All">
       <summary>
         <para>Render all options.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.TerrainRenderFlags.details">
+    <member name="F:UnityEngine.TerrainRenderFlags.Details">
       <summary>
         <para>Render terrain details.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.TerrainRenderFlags.heightmap">
+    <member name="F:UnityEngine.TerrainRenderFlags.Heightmap">
       <summary>
         <para>Render heightmap.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.TerrainRenderFlags.trees">
+    <member name="F:UnityEngine.TerrainRenderFlags.Trees">
       <summary>
         <para>Render trees.</para>
       </summary>
@@ -764,7 +764,12 @@ Rotation of the tree on X-Z plane (in radians).</para>
     </member>
     <member name="P:UnityEngine.TreePrototype.prefab">
       <summary>
-        <para>Retrieves the actual GameObect used by the tree.</para>
+        <para>Retrieves the actual GameObject used by the tree.</para>
+      </summary>
+    </member>
+    <member name="A:UnityEngine.TerrainModule">
+      <summary>
+        <para>The Terrain module implements Unity's Terrain rendering engine available through the Terrain component.</para>
       </summary>
     </member>
   </members>
