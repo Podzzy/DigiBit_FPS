@@ -76,4 +76,5 @@ License
 MIT - however as mentioned, feel free to credit me or contact me in some form telling me thanks or something similar! I made this hoping people would benefit from it, so to get that confirmed would warm my heart haha!
 
 
-**NF Mynster - Mynster Entertainment**
+**NF Mynster - Footstomp Studios**
+https://www.footstomp.studio/
