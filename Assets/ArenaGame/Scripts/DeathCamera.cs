@@ -31,6 +31,7 @@ public class DeathCamera : MonoBehaviour
     {
         //The SmoothMouseLook doesn't work if an animation is overriding the camera's rotation, so disable the animator untill we need it
         cameraAnimator.enabled = false;
+        np.NetworkStartEvent += NetworkStart;
     }
 
     private void NetworkStart()
@@ -115,5 +116,6 @@ public class DeathCamera : MonoBehaviour
     {
         hp.OnPlayerDie -= StartZoomOut;
         hp.OnPlayerRespawn -= StartZoomIn;
+        np.NetworkStartEvent -= NetworkStart;
     }
 }

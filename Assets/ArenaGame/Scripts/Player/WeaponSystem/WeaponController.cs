@@ -394,8 +394,8 @@ public class WeaponController : MonoBehaviour
 
         //Switch weapon, do a clone so that the version that gets incremented ammo and such isn't the one from the list, but a copy
         currentWeapon = weaponList[weaponToSwitch].Clone();
-        Debug.Log("SWITCH WEAPON");
         //if the weapon switched to, is not the hands, show the view and world models and set the animator values accordingly
+        //Should probably move this to the player animator - now you got something to do! :P
         if (currentWeapon.weaponName != "Hands")
         {
             currentWeapon.viewModel.SetActive(true);

@@ -30,22 +30,32 @@ public class AnimationSync : MonoBehaviour
             //set the "IsMoving" variable on the world & view model
             if (vertical != 0 || horizontal != 0)
             {
-                worldModelAnimator.SetBool("IsMoving", true);
-                //set the view model
-                viewModelAnimator.SetBool("IsMoving", true);
+                if (worldModelAnimator.gameObject.activeInHierarchy || viewModelAnimator.gameObject.activeInHierarchy)
+                {
+                    worldModelAnimator.SetBool("IsMoving", true);
+                    //set the view model
+                    viewModelAnimator.SetBool("IsMoving", true);
+                }                
                 //Set the bool across the network
                 np.networkObject.isMoving = true;
             }
             else //we aren't moving
             {
-                worldModelAnimator.SetBool("IsMoving", false);
-                viewModelAnimator.SetBool("IsMoving", false);
+                if (worldModelAnimator.gameObject.activeInHierarchy || viewModelAnimator.gameObject.activeInHierarchy)
+                {
+                    worldModelAnimator.SetBool("IsMoving", false);
+                    viewModelAnimator.SetBool("IsMoving", false);
+                }
+
                 np.networkObject.isMoving = false;
             }
 
-            //set the vertical and horizontal floats
-            worldModelAnimator.SetFloat("vertical", vertical);
-            worldModelAnimator.SetFloat("horizontal", horizontal);
+            if (worldModelAnimator.gameObject.activeInHierarchy)
+            {
+                //set the vertical and horizontal floats
+                worldModelAnimator.SetFloat("vertical", vertical);
+                worldModelAnimator.SetFloat("horizontal", horizontal);
+            }
 
             //sync the vertial and horizontal floats on the network
             np.networkObject.horizontal = horizontal;
@@ -53,10 +63,14 @@ public class AnimationSync : MonoBehaviour
         }
         else //if we aren't the owner
         {
-            //Use the values set by the owner
-            worldModelAnimator.SetBool("IsMoving", np.networkObject.isMoving);
-            worldModelAnimator.SetFloat("vertical", np.networkObject.vertical);
-            worldModelAnimator.SetFloat("horizontal", np.networkObject.horizontal);
+            if (worldModelAnimator.gameObject.activeInHierarchy)
+            {
+                //Use the values set by the owner
+                worldModelAnimator.SetBool("IsMoving", np.networkObject.isMoving);
+                worldModelAnimator.SetFloat("vertical", np.networkObject.vertical);
+                worldModelAnimator.SetFloat("horizontal", np.networkObject.horizontal);
+            }
+
         }
     }
 }
