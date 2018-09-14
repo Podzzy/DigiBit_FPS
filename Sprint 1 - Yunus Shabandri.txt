@@ -1,0 +1,5 @@
+We didn’t code anything this sprint. This sprint we:
+ - met with Colt in order to understand project requirements
+ - decided the project environment, language and plan of attack
+ - created powerpoint for Sprint 1 presentation
+ - worked on Mitigation Plan Slide for powerpoint
