@@ -6343,6 +6343,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a34ec0daf6c4124d89afdaca2b31bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 0}
+  bulletSpawn: {fileID: 0}
   np: {fileID: 114852839663008728}
   setupPlayer: {fileID: 114196050072286926}
   camShake: {fileID: 114085528446270228}
@@ -6374,7 +6376,8 @@ MonoBehaviour:
     viewModelMuzzlePoint: {fileID: 1794514909539312}
     worldModelMuzzlePoint: {fileID: 1802885457175570}
     hitscan: 1
-    projectile: {fileID: 0}
+    projectile: {fileID: 1722902803952666, guid: 28d2a36fd5dbfa747bdf8cceb21c9528,
+      type: 2}
   - weaponName: RocketLauncher
     viewModel: {fileID: 1088555780648926}
     worldModel: {fileID: 1167463663549552}
@@ -6403,7 +6406,8 @@ MonoBehaviour:
     viewModelMuzzlePoint: {fileID: 1173060539086738}
     worldModelMuzzlePoint: {fileID: 1690762750378974}
     hitscan: 1
-    projectile: {fileID: 0}
+    projectile: {fileID: 1725226462666542, guid: b319ecdddd600394481c68f43910f49b,
+      type: 2}
   - weaponName: Pistol
     viewModel: {fileID: 1515996301631236}
     worldModel: {fileID: 1616521939991274}
@@ -6417,7 +6421,8 @@ MonoBehaviour:
     viewModelMuzzlePoint: {fileID: 1518717820489864}
     worldModelMuzzlePoint: {fileID: 1022384150931270}
     hitscan: 1
-    projectile: {fileID: 0}
+    projectile: {fileID: 1460421954974060, guid: 47dc2fd4ddcbc8b43aee7377ac68752e,
+      type: 2}
   - weaponName: MachineGun
     viewModel: {fileID: 1636552006919898}
     worldModel: {fileID: 1609495951662388}
@@ -6431,7 +6436,8 @@ MonoBehaviour:
     viewModelMuzzlePoint: {fileID: 1125007815042572}
     worldModelMuzzlePoint: {fileID: 1598961265968246}
     hitscan: 1
-    projectile: {fileID: 0}
+    projectile: {fileID: 1784500563744068, guid: be9b47f588e8e5f4e9220effa03665c2,
+      type: 2}
   viewModels:
   - {fileID: 1636552006919898}
   - {fileID: 1802807502624170}
