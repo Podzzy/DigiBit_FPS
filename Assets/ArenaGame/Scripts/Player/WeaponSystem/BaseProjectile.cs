@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class BaseProjectile : MonoBehaviour
 {
-
+  
     //The speed of the bullet
     public float ProjectileSpeed = 10;
 

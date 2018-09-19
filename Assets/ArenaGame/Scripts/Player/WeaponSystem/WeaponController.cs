@@ -12,6 +12,11 @@ public class WeaponController : MonoBehaviour
     //An event called when the player is reloading, the float is the reload time
     public event System.Action<float> OnReloadEvent;
 
+    public GameObject bulletPrefab;
+    public Transform bulletSpawn;
+
+
+
     [Header("Script refrences")]
     [SerializeField]
     //reference to the main networked script
@@ -234,6 +239,7 @@ public class WeaponController : MonoBehaviour
             if (Input.GetButton("Fire1") && !isReloading)
             {
                 Shoot();
+
             }          
         }
     }
@@ -266,13 +272,7 @@ public class WeaponController : MonoBehaviour
                     camShake.DoCameraShake(currentWeapon.recoilAmount, 0.1f);
                     //viewmodel shooting animation
                     viewModelAnimator.SetTrigger("shoot");
-
-                    //Use coroutine for the muzzle flash so we can toggle it for a single frame
-                    if (viewModelMuzzleFlashCorountine != null)
-                    {
-                        StopCoroutine(viewModelMuzzleFlashCorountine);
-                    }
-                    viewModelMuzzleFlashCorountine = StartCoroutine(ShowViewModelMuzzle(currentWeapon.viewModelMuzzlePoint.transform.position));
+                
                 }
             }
         }
@@ -305,9 +305,13 @@ public class WeaponController : MonoBehaviour
                     //If the current weapon doesn't use projectiles
                     if (currentWeapon.hitscan)
                     {
+                         GameObject projectile = GameObject.Instantiate(currentWeapon.projectile, currentWeapon.worldModelMuzzlePoint.transform.position, currentWeapon.worldModelMuzzlePoint.transform.rotation);
+                            // Get the projectile and set the damage
+                            BaseProjectile p = projectile.GetComponent<BaseProjectile>();
                         HealthSystem enemyHP = hit.collider.GetComponent<HealthSystem>();
                         if (enemyHP)
                         {
+                           
                             //call take damage and supply some raycast hit information
                             enemyHP.TakeDamage(currentWeapon.damagePerShot, setupPlayer.PlayerName, hit.point, hit.normal);
                         }
